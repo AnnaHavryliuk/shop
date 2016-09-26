@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="row">
+    <header class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h2>Products</h2>
+    </header>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="product" ng-repeat="product in products">
+        <a href="#/{{product.id}}">
+          <h3 ng-bind="product.name"></h3>
+        </a>
+        <img class="product-img-icon" ng-src="{{product.imageUrl}}" fallback-src="src/img/prod.png" alt="product">
+        <p ng-bind="truncText(product.description, 40)"></p>
+      </div>
+    </div>
+  </div>
+</div>
