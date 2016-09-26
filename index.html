@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/main.css">
+  </head>
+  <body ng-app="mainApp">
+    <div class="container-fluid">
+      <nav id="navigation">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 nopadding">
+            <a  class="" href="#/">Home Page</a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 nopadding">
+            <a  class="" href="#/my-orders">My orders</a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 nopadding">
+            <a  class="" href="#/add-product">Add new product</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ng-view></ng-view>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="src/js/main.js"></script>
+    <script type="text/javascript" src="src/js/models/products.js"></script>
+    <script type="text/javascript" src="src/js/directives/fallback-src.js"></script>
+    <script type="text/javascript" src="src/js/controllers/all-products.js"></script>
+    <script type="text/javascript" src="src/js/controllers/product-info.js"></script>
+    <script type="text/javascript" src="src/js/controllers/my-orders.js"></script>
+    <script type="text/javascript" src="src/js/controllers/add-product.js"></script>
+  </body>
+</html>
